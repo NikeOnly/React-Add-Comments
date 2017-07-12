@@ -1,0 +1,102 @@
+@import '../_sass-addons/color-variables';
+
+.comment-list__item {
+  width     : 500px;
+  margin    : 15px 0;
+  list-style: none;
+
+  a {
+    color      : $grey;
+    line-height: 25px;
+    font-size  : 15px;
+    cursor     : pointer;
+  }
+}
+
+.comment-list__wrapper {
+  display    : flex;
+  align-items: flex-start;
+  overflow   : hidden;
+}
+
+.comment-list__avatar {
+  margin-right: 15px;
+}
+
+.comment-list__info {
+  width: 430px;
+}
+
+.comment-list__header {
+  color        : $grey;
+  margin-bottom: 5px;
+}
+
+.comment-list-item-replies__wrapper {
+  margin       : 5px 0 5px 80px;
+  padding      : 5px 10px;
+  border       : 1px solid $grey;
+  border-radius: 5px;
+}
+
+.comment-list-item-reply-input {
+  text-align: right;
+}
+
+.comment-list-item-reply-input__wrapper {
+  display    : flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.comment-list-item-reply-input__input {
+  width        : 100%;
+  line-height  : 50px;
+  padding      : 0 10px;
+  border       : 1px solid $grey;
+  border-radius: 5px 5px 0 5px;
+  outline      : none;
+}
+
+.comment-list-item-reply-input__add-btn {
+  width        : 100px;
+  padding      : 0 10px;
+  border       : 1px solid $grey;
+  border-top   : 0 solid $grey;
+  border-right : 0 solid $grey;
+  border-radius: 0 0 0 5px;
+  line-height  : 25px;
+  background   : $primary-btn-color;
+  outline      : none;
+  cursor       : pointer;
+}
+
+.comment-list-item-reply-input__cancel-btn {
+  width        : 100px;
+  padding      : 0 10px;
+  border       : 1px solid $grey;
+  border-top   : 0 solid $grey;
+  border-radius: 0 0 5px 0;
+  line-height  : 25px;
+  outline      : none;
+  cursor       : pointer;
+}
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.comment-list-item-reply-input_error {
+  padding   : 5px 0 0;
+  text-align: center;
+  color     : $red;
+}
+
+.comment-list-item-reply-input__input_error {
+  border    : 1px solid $red;
+  box-shadow: inset 0 0 10px $red;
+}

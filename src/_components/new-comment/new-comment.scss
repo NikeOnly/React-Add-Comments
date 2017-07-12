@@ -1,0 +1,48 @@
+@import '../_sass-addons/color-variables';
+
+.add-comment {
+  width         : 500px;
+  padding-bottom: 15px;
+  border-bottom : 1px solid $grey;
+}
+
+.add-comment__wrapper {
+  display       : flex;
+  flex-direction: row;
+  align-items   : center;
+}
+
+.add-comment__avatar {
+  margin-right: 15px;
+}
+
+.new-comment__input {
+  width        : 100%;
+  padding      : 0 10px;
+  border-radius: 5px 0 0 5px;
+  border       : 1px solid $grey;
+  line-height  : 50px;
+  outline      : none;
+}
+
+.new-comment__input_error {
+  border    : 1px solid $red;
+  box-shadow: inset 0 0 10px $red;
+}
+
+.new-comment__button {
+  padding      : 0 10px;
+  line-height  : 50px;
+  border       : 1px solid $grey;
+  border-left  : 0 solid $grey;
+  border-radius: 0 5px 5px 0;
+  outline      : none;
+  background   : $primary-btn-color;
+  cursor       : pointer;
+}
+
+.add-comment__error {
+  padding   : 5px 0 0;
+  text-align: center;
+  color     : $red;
+}
